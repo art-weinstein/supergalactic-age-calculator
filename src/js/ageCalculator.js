@@ -25,4 +25,5 @@ export class Person {
       this.mercuryBeyond = (this.mercuryAge - 80 / .24).toFixed(1);
     }
   }
+  
 }
