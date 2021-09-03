@@ -79,4 +79,9 @@ describe ('Person', () =>{
     person.jupiterLeft();
     expect(person.jupiterRemaining).toEqual("4.3");
   });
+  test('Should calculate the amount of time lived in Jupiter years beyond the expected average', () =>{
+    let person = new Person ("Roger", 90);
+    person.jupiterCalculator();
+    expect(person.jupiterBeyond).toEqual("0.9");
+  });
 });
