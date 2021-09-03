@@ -7,6 +7,9 @@ export class Person {
     this.mercuryAge = 0;
     this.mercuryRemaining = 0;
     this.mercuryBeyond = 0;
+    this.venusAge = 0;
+    this.venusRemaining = 0;
+    this.venusBeyond = 0;
   }
   averageAgeLeft() {
     if (this.age <= 80){
@@ -25,5 +28,7 @@ export class Person {
       this.mercuryBeyond = (this.mercuryAge - 80 / .24).toFixed(1);
     }
   }
-  
+  venusCalculator () {
+    this.venusAge = (this.age / .62).toFixed(1);
+  }
 }
