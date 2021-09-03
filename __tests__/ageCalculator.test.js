@@ -62,4 +62,10 @@ describe ('Person', () =>{
     person.marsLeft();
     expect(person.marsRemaining).toEqual("27.7");
   });
+  test('Should calculate the time lived beyond the average expected life in Mars years', () => {
+    let person = new Person ("Roger", 90);
+    person.marsCalculator();
+    person.marsLeft();
+    expect(person.marsBeyond).toEqual("5.3")
+  });
 });
