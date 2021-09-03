@@ -5,9 +5,10 @@ body {
   radial-gradient(
     4px 4px at 30px 5px,
     rgb(169, 169, 238),
-    rgba(255, 255, 255, 0)
+    rgba(255, 255, 255, 0),
+    overflow: hidden;
   ),
-  overflow: hidden;
+  
 }
 .space {
   background: rgba(128, 0, 128, 0.1) center / 200px 200px round;
@@ -23,7 +24,7 @@ body {
   animation: space 180s ease-in-out infinite;
   background-image:
     radial-gradient(
-      4px 4px at 30px 5px,
+      3px 2.5px at 30px 5px,
       rgb(169, 169, 238),
       rgba(255, 255, 255, 0)
     ),
@@ -58,19 +59,13 @@ body {
       rgba(255, 255, 255, 0)
     );
 }
-@keyframes space {
-  40% {
-    opacity: 0.75;
+
+@keyframes space{
+  from{
+    transform: scale(1);
   }
-  50% {
-    opacity: 0.25;
-  }
-  60% {
-    opacity: 0.75;
-  }
-  100% {
-    transform: perspective(800px);
+  to {
+    transform: scale(2);
+    box-shadow: 0 0 10px 7px rgba(242, 238, 600, 0.836);
   }
 }
-
-
