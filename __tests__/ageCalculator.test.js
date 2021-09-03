@@ -45,4 +45,10 @@ describe ('Person', () =>{
     person.venusLeft();
     expect(person.venusRemaining).toEqual("83.8");
   });
+  test('Should calculate the time lived beyond the average expected life in Venus years', () =>{
+    let person = new Person ('Roger', 90);
+    person.venusCalculator();
+    person.venusLeft();
+    expect(person.venusBeyond).toEqual("16.1")
+  });
 });
