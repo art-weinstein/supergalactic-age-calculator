@@ -10,6 +10,9 @@ export class Person {
     this.venusAge = 0;
     this.venusRemaining = 0;
     this.venusBeyond = 0;
+    this.marsAge = 0;
+    this.marsRemaining = 0;
+    this.marsBeyond = 0;
   }
   averageAgeLeft() {
     if (this.age <= 80){
@@ -19,7 +22,7 @@ export class Person {
     }
   }
   mercuryCalculator() {
-        this.mercuryAge = (this.age / .24).toFixed(1);
+    this.mercuryAge = (this.age / .24).toFixed(1);
   }
   mercuryLeft() {
     if (this.mercuryAge <= (80 / .24)){
@@ -37,5 +40,8 @@ export class Person {
     } else {
       this.venusBeyond = (this.venusAge - 80 / .62).toFixed(1);
     }
+  }
+  marsCalculator() {
+    this.marsAge = (this.age / 1.88).toFixed(1);
   }
 }
