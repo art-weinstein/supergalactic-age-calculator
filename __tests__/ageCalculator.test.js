@@ -1,6 +1,6 @@
 const { exportAllDeclaration } = require("@babel/types");
-const { TestScheduler } = require("jest-cli")
-
+const { TestScheduler } = require("jest-cli");
+import { Person } from  "../src/js/ageCalculator";
 
 describe ('Person', () =>{
   test('Should create a person object with an initial age', () =>{
