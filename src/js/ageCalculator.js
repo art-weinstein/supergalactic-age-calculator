@@ -44,4 +44,7 @@ export class Person {
   marsCalculator() {
     this.marsAge = (this.age / 1.88).toFixed(1);
   }
+  marsLeft () {
+    
+  }
 }
