@@ -35,8 +35,14 @@ describe ('Person', () =>{
     expect(person.mercuryBeyond).toEqual("41.7")
   });
   test('Should calculate the age of a person in Venus years', () => {
-    let person = new Person('Art', 28)
+    let person = new Person('Art', 28);
     person.venusCalculator();
     expect(person.venusAge).toEqual("45.2");
   });
+  test('Calculate average remaining Venus years a person has left to live', () => {
+    let person = new Person('Art', 28);
+    person.venusCalculator();
+    person.venusLeft();
+    expect(person.venusRemaining).toEqual("83.8");
+  })
 });
