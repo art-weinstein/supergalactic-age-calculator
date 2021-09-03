@@ -18,8 +18,8 @@ describe ('Person', () =>{
     person.averageAgeLeft();
     expect(person.livedBeyond).toEqual(10);
   });
-  // test('Should calculate the age of a person on Mercury', () =>{
-  //   let person = new Person('Art', 28);
-  //   expect(person.mercuryAge).toEqual(116);
-  // })
+  test('Should calculate the age of a person on Mercury', () =>{
+    let person = new Person('Art', 28);
+    expect(person.mercuryAge).toEqual(116);
+  })
 });
