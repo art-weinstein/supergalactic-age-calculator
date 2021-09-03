@@ -49,6 +49,11 @@ describe ('Person', () =>{
     let person = new Person ('Roger', 90);
     person.venusCalculator();
     person.venusLeft();
-    expect(person.venusBeyond).toEqual("16.1")
+    expect(person.venusBeyond).toEqual("16.2");
+  });
+  test('Should calculate the time lived in Mars years', () => {
+    let person = new Person ("Art", 28);
+    person.marsCalculator();
+    expect(person.marsAge).toEqual("14.9");
   });
 });

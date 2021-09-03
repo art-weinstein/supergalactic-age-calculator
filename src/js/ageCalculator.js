@@ -34,6 +34,8 @@ export class Person {
   venusLeft() {
     if (this.venusAge <= (80 / .62)){
       this.venusRemaining = (80 / .62 - this.venusAge).toFixed(1);
+    } else {
+      this.venusBeyond = (this.venusAge - 80 / .62).toFixed(1);
     }
   }
 }
