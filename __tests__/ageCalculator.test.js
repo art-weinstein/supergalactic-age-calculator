@@ -44,5 +44,5 @@ describe ('Person', () =>{
     person.venusCalculator();
     person.venusLeft();
     expect(person.venusRemaining).toEqual("83.8");
-  })
+  });
 });
