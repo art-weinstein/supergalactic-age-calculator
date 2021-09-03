@@ -1,1 +1,5 @@
-
+body {
+  background: radial-gradient(circle at center, black 0, purple 200%);
+  height: 100vh;
+  overflow: hidden;
+}
