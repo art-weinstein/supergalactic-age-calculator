@@ -45,6 +45,9 @@ export class Person {
     this.marsAge = (this.age / 1.88).toFixed(1);
   }
   marsLeft () {
-    
+    if (this.marsAge <= 80 / 1.88){
+      this.marsRemaining = (80 / 1.88 - this.marsAge).toFixed(1);
+    }
   }
 }
+
