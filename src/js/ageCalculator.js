@@ -13,12 +13,15 @@ export class Person {
     this.marsAge = 0;
     this.marsRemaining = 0;
     this.marsBeyond = 0;
+    this.jupiterAge = 0;
+    this.jupiterRemaining = 0;
+    this.jupiterBeyond = 0;
   }
   averageAgeLeft() {
     if (this.age <= 80){
-    this.averageRemaining = (80 - this.age);
+    this.averageRemaining = (80 - this.age).toFixed(1);
     } else {
-    this.livedBeyond = (this.age - 80);
+    this.livedBeyond = (this.age - 80).toFixed(1);
     }
   }
   mercuryCalculator() {
@@ -50,6 +53,9 @@ export class Person {
     } else {
       this.marsBeyond = (this.marsAge - 80 / 1.88).toFixed(1);
     }
+  }
+  jupiterCalculator(){
+    this.jupiterAge = (this.age / 11.86).toFixed(1);
   }
 }
 
