@@ -4,7 +4,8 @@ export class Person {
     this.age = age;
     this.averageRemaining = 0;
     this.livedBeyond = 0;
-  };
+    this.mercuryAge = 0;
+  }
   averageAgeLeft() {
     if (this.age <= 80){
     this.averageRemaining = (80 - this.age);
@@ -12,14 +13,16 @@ export class Person {
     this.livedBeyond = (this.age - 80);
     }
   }
-};
-
-export class mercuryPerson extends Person {
-  constructor(name, age){
-    super(name, age);
-    this.mercuryAge;
-  }
   mercuryCalculator() {
-    this.mercuryAge = (this.age / .24).toFixed(1);
+        this.mercuryAge = (this.age / .24).toFixed(1);
   }
 }
+// export class mercuryPerson extends Person {
+//   constructor(name, age){
+//     super(name, age);
+//     this.mercuryAge = 0;
+//   }
+//   mercuryCalculator() {
+//     this.mercuryAge = (this.age / .24).toFixed(1);
+//   }
+// }
