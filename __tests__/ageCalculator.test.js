@@ -21,5 +21,11 @@ describe ('Person', () =>{
     let person = new Person('Art', 28);
     person.mercuryCalculator();
     expect(person.mercuryAge).toEqual("116.7");
+  });
+  test('Should calculate athe average age remaining for a person on mercury', () =>{
+    let person = new Person('Art', 28);
+    person.mercuryCalculator();
+    person.mercuryLeft();
+    expect(person.mercuryRemaining).toEqual("216.6")
   })
 });

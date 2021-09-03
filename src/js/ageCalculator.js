@@ -17,12 +17,3 @@ export class Person {
         this.mercuryAge = (this.age / .24).toFixed(1);
   }
 }
-// export class mercuryPerson extends Person {
-//   constructor(name, age){
-//     super(name, age);
-//     this.mercuryAge = 0;
-//   }
-//   mercuryCalculator() {
-//     this.mercuryAge = (this.age / .24).toFixed(1);
-//   }
-// }
