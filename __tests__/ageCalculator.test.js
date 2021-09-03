@@ -82,6 +82,7 @@ describe ('Person', () =>{
   test('Should calculate the amount of time lived in Jupiter years beyond the expected average', () =>{
     let person = new Person ("Roger", 90);
     person.jupiterCalculator();
+    person.jupiterLeft();
     expect(person.jupiterBeyond).toEqual("0.9");
   });
 });
