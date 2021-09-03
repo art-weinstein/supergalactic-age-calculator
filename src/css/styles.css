@@ -1,13 +1,9 @@
 body {
-  background: radial-gradient(circle at center, black 0, rgb(160, 80, 160) 200%);
+  background: linear-gradient(-45deg, #000000, #11010f, #30024b);
   height: 100vh;
-  background-image:
-  radial-gradient(
-    4px 4px at 30px 5px,
-    rgb(169, 169, 238),
-    rgba(255, 255, 255, 0),
-    overflow: hidden;
-  ),
+  background-size: 100% 100%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
   
 }
 .space {
@@ -59,7 +55,6 @@ body {
       rgba(255, 255, 255, 0)
     );
 }
-
 @keyframes space{
   from{
     transform: scale(1);
