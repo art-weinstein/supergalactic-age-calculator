@@ -76,6 +76,7 @@ describe ('Person', () =>{
   test('Should calculate the time remaining to live in Jupiter yeras', () =>{
     let person = new Person("Art", 28);
     person.jupiterCalculator();
-    expect(person.jupiterRemaining).toEqual("4.4");
+    person.jupiterLeft();
+    expect(person.jupiterRemaining).toEqual("4.3");
   });
 });

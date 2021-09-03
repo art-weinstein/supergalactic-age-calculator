@@ -54,8 +54,13 @@ export class Person {
       this.marsBeyond = (this.marsAge - 80 / 1.88).toFixed(1);
     }
   }
-  jupiterCalculator(){
+  jupiterCalculator() {
     this.jupiterAge = (this.age / 11.86).toFixed(1);
+  }
+  jupiterLeft() {
+    if(this.jupiterAge <= 80 / 11.86){
+      this.jupiterRemaining = (80 / 11.86 - this.jupiterAge).toFixed(1);
+    }
   }
 }
 
