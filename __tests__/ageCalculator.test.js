@@ -68,4 +68,9 @@ describe ('Person', () =>{
     person.marsLeft();
     expect(person.marsBeyond).toEqual("5.3")
   });
+  test('Should calculate the time lived in Jupiter years', () =>{
+    let person = new Person("Art", 28);
+    // person.jupiterCalculator();
+    expect(person.jupiterAge).toEqual(2.7)
+  });
 });
