@@ -32,6 +32,6 @@ describe ('Person', () =>{
     let person = new Person ('Roger', 90);
     person.mercuryCalculator();
     person.mercuryLeft();
-    expect(person.mercuryBeyond).toEqual("41.6")
+    expect(person.mercuryBeyond).toEqual("41.7")
   })
 });

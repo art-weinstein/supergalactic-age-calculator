@@ -21,6 +21,8 @@ export class Person {
   mercuryLeft () {
     if (this.mercuryAge <= (80 / .24).toFixed(1)){
       this.mercuryRemaining = (80 / .24 - this.mercuryAge).toFixed(1);
+    } else {
+      this.mercuryBeyond = (this.mercuryAge - 80 / .24).toFixed(1);
     }
   }
 }
