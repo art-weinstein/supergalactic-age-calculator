@@ -13,3 +13,13 @@ export class Person {
     }
   }
 };
+
+export class mercuryPerson extends Person {
+  constructor(name, age){
+    super(name, age);
+    this.mercuryAge;
+  }
+  mercuryCalculator() {
+    this.mercuryAge = (this.age / .24).toFixed(1);
+  }
+}

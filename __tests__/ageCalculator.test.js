@@ -1,7 +1,6 @@
-const { exportAllDeclaration } = require("@babel/types");
-const { TestScheduler } = require("jest-cli");
-import { Person } from  "../src/js/ageCalculator";
-
+// const { exportAllDeclaration } = require("@babel/types");
+// const { TestScheduler } = require("jest-cli");
+import { mercuryPerson, Person } from  "../src/js/ageCalculator";
 describe ('Person', () =>{
   test('Should create a person object with an initial age', () =>{
     let person = new Person('Art', 28);
@@ -19,7 +18,8 @@ describe ('Person', () =>{
     expect(person.livedBeyond).toEqual(10);
   });
   test('Should calculate the age of a person on Mercury', () =>{
-    let person = new Person('Art', 28);
-    expect(person.mercuryAge).toEqual(116);
+    let person = new mercuryPerson('Art', 28);
+    person.mercuryCalculator();
+    expect(person.mercuryAge).toEqual("116.7");
   })
 });
