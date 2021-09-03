@@ -22,10 +22,16 @@ describe ('Person', () =>{
     person.mercuryCalculator();
     expect(person.mercuryAge).toEqual("116.7");
   });
-  test('Should calculate athe average age remaining for a person on mercury', () =>{
+  test('Should calculate the average age remaining for a person on mercury', () =>{
     let person = new Person('Art', 28);
     person.mercuryCalculator();
     person.mercuryLeft();
     expect(person.mercuryRemaining).toEqual("216.6")
+  });
+  test('Should calculate the years lived beyond average expected mercury years', () =>{
+    let person = new Person ('Roger', 90);
+    person.mercuryCalculator();
+    person.mercuryLeft();
+    expect(person.mercuryBeyond).toEqual("41.6")
   })
 });
